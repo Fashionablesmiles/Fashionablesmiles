@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "image": "images/favicon.png",
+    "name": "Shakib ",
+    "subtitle": "3x Published Editorial & Campaign Model sa",
+    "bookingText": "Book Me for Runway & Campaigns ad"
+  },
+  "buttons": [
+    {
+      "text": "4th Annual Passion & Paradise Tix",
+      "url": "https://sunflowercabana.com/products/passion-amp-paradise-26?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      "style": "gold-btn",
+      "icon": "fa-solid fa-ticket"
+    },
+    {
+      "text": "Book Me for Modeling",
+      "url": "https://www.instagram.com/atiiyunnuh",
+      "style": "glass-card",
+      "icon": "fa-solid fa-camera"
+    }
+  ],
+  "portfolio": [
+    {
+      "image": "images/iris-analysis.png",
+      "alt": "Work 1"
+    },
+    {
+      "image": "images/new-port-2.webp",
+      "alt": "Work 2"
+    },
+    {
+      "image": "images/new-port-3.webp",
+      "alt": "Work 3"
+    },
+    {
+      "image": "images/new-port-4.webp",
+      "alt": "Work 4"
+    },
+    {
+      "image": "images/new-port-5.webp",
+      "alt": "Work 5"
+    },
+    {
+      "image": "images/new-port-7.webp",
+      "alt": "Work 7"
+    },
+    {
+      "image": "images/new-port-9.webp",
+      "alt": "Work 9"
+    },
+    {
+      "image": "images/new-port-10.webp",
+      "alt": "Work 10"
+    }
+  ],
+  "about": {
+    "description": "Editorial and campaign fashion model and 3x published model featured in"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/atiiyunnuh",
+    "tiktok": "https://www.tiktok.com/@atiiyunnuh"
+  }
+}

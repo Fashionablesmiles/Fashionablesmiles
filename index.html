@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atiiyunnuh | Model & Fashion</title>
+    <link rel="icon" type="image/webp" href="images/new-port-10.webp">
+
+    <meta name="description" content="Official bio link page for Atiiyunnuh - Model, Fashion Enthusiast, and Runway Star. Book for shoots, shows, and collaborations.">
+    
+    <!-- Tailwind CSS -->
+    <script src="js/tailwind.js"></script>
+
+    
+
+    <script src="js/lucide.js"></script>
+
+    
+    <!-- AOS Animation -->
+    <link href="css/aos.css" rel="stylesheet">
+
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+</head>
+<body class="min-h-screen py-12 px-4 selection:bg-yellow-500/30">
+
+    <div class="max-w-md mx-auto space-y-12">
+        
+        <!-- Header Section -->
+        <header class="text-center space-y-6" data-aos="fade-down">
+            <div class="profile-img-container w-32 h-32 mx-auto lightbox-btn group overflow-hidden rounded-full">
+                <div class="absolute inset-0 bg-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
+                    <i data-lucide="zoom-in" class="text-white w-6 h-6"></i>
+                </div>
+                <img id="profile-img" src="images/new-port-10.webp" alt="Atiiyunnuh" class="w-full h-full rounded-full object-cover border-4 border-white/10">
+            </div>
+            
+            <div class="space-y-2">
+                <h1 id="profile-name" class="text-4xl font-bold tracking-tight gold-gradient">Atiiyunnuh</h1>
+                <p id="profile-subtitle" class="text-gray-400 font-medium tracking-wide uppercase text-xs">3x Published Editorial & Campaign Model</p>
+                <div class="flex items-center justify-center gap-2 text-yellow-500/90">
+                    <span id="booking-text" class="text-sm">Book Me for Runway & Campaigns</span>
+                    <i class="fa-solid fa-star text-[10px]"></i>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Action Buttons -->
+        <section id="buttons-container" class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+            <!-- Buttons will be loaded here -->
+        </section>
+
+
+
+
+        <!-- Portfolio Gallery -->
+        <section class="space-y-4" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-bold px-2 flex items-center gap-2">
+                Portfolio 
+                <span class="w-12 h-[1px] bg-yellow-500/50"></span>
+            </h3>
+            <div id="portfolio-grid" class="grid grid-cols-2 gap-4">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="glass-card p-6 rounded-3xl space-y-4" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+                About Me
+                <span class="w-12 h-[1px] bg-yellow-500/50"></span>
+            </h3>
+            <p id="about-text" class="text-gray-300 leading-relaxed">
+                <!-- About description will be loaded here -->
+            </p>
+        </section>
+
+        <!-- Social Links -->
+        <section class="flex justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+            <a id="social-instagram" href="#" title="Instagram" class="glass-card p-4 rounded-full hover:text-yellow-500 group w-14 h-14 flex items-center justify-center">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a id="social-tiktok" href="#" title="TikTok" class="glass-card p-4 rounded-full hover:text-yellow-500 group w-14 h-14 flex items-center justify-center">
+                <i class="fa-brands fa-tiktok text-2xl"></i>
+            </a>
+        </section>
+
+        <!-- Footer CTA -->
+        <footer class="text-center py-8 space-y-6" data-aos="fade-up" data-aos-delay="500">
+            <p class="text-gray-500 text-xs tracking-widest uppercase">
+                &copy; <span id="year"></span> Atiiyunnuh. All Rights Reserved.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/aos.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-close">
+            <i data-lucide="x"></i>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <button class="lightbox-nav prev" id="prevBtn">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <img src="" alt="Full size preview" class="lightbox-img">
+        
+        <button class="lightbox-nav next" id="nextBtn">
+            <i data-lucide="chevron-right"></i>
+        </button>
+    </div>
+
+
+</body>
+
+</html>

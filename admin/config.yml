@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main # Adjust if your branch is different
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "content"
+    label: "Main Content"
+    files:
+      - file: "data/content.json"
+        label: "Home Page Details"
+        name: "home"
+        fields:
+          - label: "Profile Section"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Profile Image", name: "image", widget: "image" }
+              - { label: "Full Name", name: "name", widget: "string" }
+              - { label: "Job Title/Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Booking CTA", name: "bookingText", widget: "string" }
+          
+          - label: "Action Buttons"
+            name: "buttons"
+            widget: "list"
+            fields:
+              - { label: "Button Text", name: "text", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Button Style (glass-card/gold-btn)", name: "style", widget: "select", options: ["glass-card", "gold-btn"], default: "glass-card" }
+              - { label: "Icon Class (e.g., fa-solid fa-ticket)", name: "icon", widget: "string" }
+          
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Alt Text", name: "alt", widget: "string" }
+
+          - label: "About Me"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+              - { label: "TikTok URL", name: "tiktok", widget: "string" }
